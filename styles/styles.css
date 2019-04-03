@@ -24,9 +24,16 @@ a {
 
 }
 
+.offers {
+      display: flex;
+      transform: translateY(-40%);
+      justify-content: space-evenly;
+}
+
 .block {
-      width: 100px;
-      height: 200px;
-      background-color: red;
-      margin: -100px auto;
+      width: 320px;
+      height: 440px;
+      background-color: white;
+      /* margin: -100px auto; */
+      box-shadow: black 2px 2px 12px;
 }
