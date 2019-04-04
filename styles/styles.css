@@ -1,3 +1,21 @@
+*,
+*:after,
+*:before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      position: relative;
+}
+
+*,
+*:after,
+*:before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      position: relative;
+}
+
 .navbar {
       background-color: rgb(4, 155, 155);
       color: white;
@@ -13,14 +31,17 @@ a {
 
 .jumbotron {
       height: 600px;
-      background-image: url('https://images.pexels.com/photos/1121782/pexels-photo-1121782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+      background-image: url('https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
       background-size: cover;
+      background-color: black;
       color: white;
 }
 
-.lead,
+.container>.lead,
 .display-4 {
       text-shadow: black 2px 0px 6px;
+      font-weight: 500;
+
 
 }
 
@@ -31,9 +52,48 @@ a {
 }
 
 .block {
-      width: 320px;
+      width: 420px;
       height: 440px;
       background-color: white;
       /* margin: -100px auto; */
       box-shadow: black 2px 2px 12px;
+}
+
+.block:nth-child(1) {
+      background-image: url('https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+      background-size: cover;
+      transition: all 1.2s;
+
+}
+
+.block:nth-child(2) {
+      background-image: url('https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+      background-size: cover;
+}
+
+.block:nth-child(3) {
+      background-image: url('https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+      background-size: cover;
+}
+
+.details {
+      display: flex;
+      position: absolute;
+      bottom: 0px;
+      background-color: rgb(4, 155, 155);
+      width: inherit;
+      height: 4em;
+      padding: 0.4em;
+      opacity: 0;
+      transition: .3s;
+      color: white;
+}
+
+
+.block:hover>.details {
+      opacity: 1;
+}
+
+.details:hover {
+      height: 4.5em;
 }
