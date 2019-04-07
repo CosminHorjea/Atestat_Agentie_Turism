@@ -16,6 +16,10 @@
       position: relative;
 }
 
+a {
+      font-weight: 600px;
+}
+
 .navbar {
       background-color: rgb(4, 155, 155);
       color: white;
@@ -23,6 +27,10 @@
 
 .navbar>a {
       color: white;
+}
+
+.navbar-brand {
+      font-size: 3em;
 }
 
 a {
@@ -34,7 +42,7 @@ a {
       background-image: url('https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
       background-size: cover;
       background-color: black;
-      color: white;
+      color: red;
 }
 
 .container>.lead,
@@ -87,6 +95,8 @@ a {
       opacity: 0;
       transition: .3s;
       color: white;
+      justify-content: space-between;
+      align-items: center;
 }
 
 
@@ -95,5 +105,20 @@ a {
 }
 
 .details:hover {
-      height: 4.5em;
+      /* height: 4.5em; */
+}
+
+.details>.btn {
+
+      background-color: white;
+      color: rgb(4, 155, 155);
+      font-size: 1.3em;
+      right: 0px;
+      border: white 2px transparent;
+}
+
+.details>.btn:hover {
+      color: white;
+      border: white 2px solid;
+      background-color: rgb(5, 155, 155)
 }
