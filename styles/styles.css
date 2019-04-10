@@ -30,11 +30,36 @@ a {
 }
 
 .navbar-brand {
-      font-size: 3em;
+      font-size: 2.6em;
+}
+
+.navbar-brand:hover {
+      color: white;
 }
 
 a {
       color: white;
+}
+
+a:hover {
+      color: white;
+}
+
+.nav-link {
+      margin: 2px;
+      border: 2px transparent solid;
+      transition: border 0.2s;
+
+}
+
+.nav-link:hover {
+      /* margin: 0px; */
+      /* color: red; */
+      height: inherit;
+      /* background-color: red; */
+      /* background-color: rgb(4, 196, 202); */
+      border-radius: 5%;
+      border: 2px solid white;
 }
 
 .jumbotron {
@@ -42,7 +67,7 @@ a {
       background-image: url('https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
       background-size: cover;
       background-color: black;
-      color: red;
+      color: white;
 }
 
 .container>.lead,
@@ -50,7 +75,26 @@ a {
       text-shadow: black 2px 0px 6px;
       font-weight: 500;
 
+}
 
+.jumbotron>.container>.lead {
+      font-size: 1.4em;
+}
+
+.btn-begin {
+      background-color: rgba(0, 0, 0, 0);
+      border: 2px solid white;
+      width: 5em;
+}
+
+.btn-begin:hover {
+      background-color: rgb(4, 155, 155);
+      border: 2px solid rgb(4, 155, 155);
+}
+
+.btn-begin:active {
+      background-color: rgb(4, 155, 155);
+      border: 2px solid rgb(4, 155, 155);
 }
 
 .offers {
@@ -99,14 +143,19 @@ a {
       align-items: center;
 }
 
+.details>h1 {
+      margin-left: 5px;
+}
+
 
 .block:hover>.details {
       opacity: 1;
 }
 
-.details:hover {
-      /* height: 4.5em; */
-}
+/* 
+.details>h1:hover {
+      margin-left: 5px;
+} */
 
 .details>.btn {
 
@@ -121,4 +170,26 @@ a {
       color: white;
       border: white 2px solid;
       background-color: rgb(5, 155, 155)
+}
+
+.hot-offers {
+      height: auto;
+}
+
+.offer {
+      height: 18em;
+      display: flex;
+      border: 1px solid #e1e1e1
+}
+
+.offer>.photo {
+      background-size: cover;
+      height: inherit;
+      width: 52em;
+      background-color: red;
+
+}
+
+.offer>.hot-detail {
+      padding: 20px 40px;
 }
