@@ -53,6 +53,8 @@ a:hover {
       margin: 2px;
       border: 2px transparent solid;
       transition: border 0.2s;
+      font-size: 1.4em;
+      font-weight: 400;
 
 }
 
@@ -68,10 +70,11 @@ a:hover {
 
 .jumbotron {
       height: 600px;
-      background-image: url('https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+      background-image: url('../images/pexels-photo-248797.jpeg');
       background-size: cover;
       background-color: black;
       color: white;
+
 }
 
 .container>.lead,
@@ -116,19 +119,19 @@ a:hover {
 }
 
 .block:nth-child(1) {
-      background-image: url('https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+      background-image: url('../images/pexels-photo-169647.jpeg');
       background-size: cover;
       transition: all 1.2s;
 
 }
 
 .block:nth-child(2) {
-      background-image: url('https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+      background-image: url('../images/pexels-photo-459225.jpeg');
       background-size: cover;
 }
 
 .block:nth-child(3) {
-      background-image: url('https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+      background-image: url('../images/pexels-photo-672532.jpg');
       background-size: cover;
 }
 
@@ -177,11 +180,14 @@ a:hover {
 }
 
 .hot-offers {
+      transform: translateY(-5%);
+
       height: auto;
 }
 
-.hot-offers>h2 {
+.hot-offers>h1 {
       text-align: center;
+      font-size: 3em;
 }
 
 .offer {
@@ -233,8 +239,24 @@ footer {
       margin: 10px 0;
 }
 
+.newsTitle {
+      color: rgb(5, 155, 155);
+
+}
+
+.quickLinks {
+      list-style-type: square bullet;
+      padding-left: 1.4em;
+}
+
+.quickLinks>li {
+      font-size: 22px;
+
+}
+
 .fas,
-.far {
+.far,
+.fab {
       font-size: 1.5em;
       margin-right: 20px;
 }
