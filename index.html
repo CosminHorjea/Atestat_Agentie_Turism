@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Agentie de Turism</title>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
             integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+      <!-- <link rel="stylesheet" href="styles/font-awsome.css"> -->
+      <link rel="stylesheet" href="styles/bootstrap.min.css">
 
       <link rel="stylesheet" href="styles/styles.css">
-
-
 
 </head>
 
@@ -31,7 +30,7 @@
                                     <a class="nav-link" href="#gallery">Galerie</a>
                               </li>
                               <li class="nav-item">
-                                    <a class="nav-link" href="#about">Despe noi</a>
+                                    <a class="nav-link" href="#services">Serviciile noastre</a>
                               </li>
                               <li class="nav-item">
                                     <a class="nav-link" href="#contact">Contact</a>
@@ -47,27 +46,27 @@
                         <h1 class="display-4">Exploreaza lumea !</h1><br>
                         <br>
 
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Incepe </a>
+                        <a class="btn btn-primary btn-lg" href="#" role="button">Incepeti </a>
                   </div>
             </div>
             <div class="offers">
                   <div class="block">
                         <div class="details">
                               <h1>Seoul</h1>
-                              <a href="#" class="btn">Cumpara</a>
+                              <a href="checkout.html" class="btn">Cumpara</a>
 
                         </div>
                   </div>
                   <div class="block">
                         <div class="details">
                               <h1>Norvegia</h1>
-                              <a href="#" class="btn">Cumpara</a>
+                              <a href="checkout.html" class="btn">Cumpara</a>
                         </div>
                   </div>
                   <div class="block">
                         <div class="details">
                               <h1>Londra</h1>
-                              <a href="#" class="btn">Cumpara</a>
+                              <a href="checkout.html" class="btn">Cumpara</a>
 
                         </div>
                   </div>
@@ -80,10 +79,13 @@
                         </div>
                         <div class="hot-detail">
                               <h1>San Francisco</h1>
-                              <p class="description">Benidorm is a buzzing resort with a big reputation for beach
-                                    holidays. Situated in sunny Costa Blanca, the town is one of the original Spanish
-                                    beach resorts...</p>
-                              <a href="#" class="btn">Cumpara</a>
+                              <p class="description">
+                                    San Francisco găzduiește un pic din tot. Indiferent dacă sunteți un vizitator pentru
+                                    prima dată sau un localnic de lungă durată, Potile de Aur din San Francisco sunt
+                                    deschis pentru toată lumea.</p><br>
+                              <span class="price">Pret: 900 &euro;</span><br>
+
+                              <a href="checkout.html" class="btn">Cumpara</a>
                         </div>
                   </div><br>
                   <div class="offer">
@@ -91,10 +93,10 @@
                         </div>
                         <div class="hot-detail">
                               <h1>Bangkok</h1>
-                              <p class="description">Benidorm is a buzzing resort with a big reputation for beach
-                                    holidays. Situated in sunny Costa Blanca, the town is one of the original Spanish
-                                    beach resorts...</p>
-                              <a href="#" class="btn">Cumpara</a>
+                              <p class="description">Bangkok, capitala Tailandei, este un oras mare cunoscut pentru
+                                    sanctuari ornate si viata stradala vibranta.</p><br>
+                              <span class="price">Pret: 700 &euro;</span><br>
+                              <a href="checkout.html" class="btn">Cumpara</a>
                         </div>
                   </div><br>
                   <div class="offer">
@@ -102,16 +104,58 @@
                         </div>
                         <div class="hot-detail">
                               <h1>Las Vegas</h1>
-                              <p class="description">Benidorm is a buzzing resort with a big reputation for beach
-                                    holidays. Situated in sunny Costa Blanca, the town is one of the original Spanish
-                                    beach resorts...</p>
-                              <a href="#" class="btn">Cumpara</a>
+                              <p class="description">Las Vegas are atât de multe distracții, mese, cumpărături, viață de
+                                    noapte, golf și spa opțiuni, poate fi dificil de a alege care experiențe sunt
+                                    perfecte pentru călătoria dvs.</p><br>
+                              <span class="price">Pret: 1000 &euro;</span><br>
+
+                              <a href="checkout.html" class="btn">Cumpara</a>
+                        </div>
+                  </div>
+            </div>
+            <div class="ourServices" id="services">
+                  <h1 style="text-align:center">Serviciile noastre</h1><br>
+                  <div class="container">
+                        <div class="row services">
+                              <div class="col-md-4">
+                                    <div class="boxService">
+                                          <i class="far fa-star"></i>
+                                          <div class="service-desc">
+                                                <h4>Servicii de inalta calitate</h4>
+                                                <p>Our tour managers are qualified, skilled, and friendly to bring you
+                                                      the
+                                                      best
+                                                      service.</p>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col-md-4">
+                                    <div class="boxService">
+                                          <i class="fas fa-headset"></i>
+                                          <div class="service-desc">
+                                                <h4>Suport 24/7</h4>
+                                                <p>You can always get professional support from our staff 24/7 and ask
+                                                      any
+                                                      question you have.</p>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col-md-4">
+                                    <div class="boxService">
+                                          <i class="fas fa-wallet"></i>
+                                          <div class="service-desc">
+                                                <h4>Cel mai bun pret garantat</h4>
+                                                <p>If you find tours that are cheaper than ours, we will compensate the
+                                                      difference.</p>
+                                          </div>
+                                    </div>
+                              </div>
                         </div>
                   </div>
             </div>
             <br> <br> <br>
             <div class="gallery-container">
-                  <h1 style="text-align:center" id="gallery">Galerie</h1>
+                  <h1 style="text-align:center" id="gallery">Galerie</h1><br>
                   <div class="gallery container-fluid">
                         <img src="images/aussieactive-411032-unsplash.jpg" alt="">
                         <img src="images/bill-anastas-241386-unsplash.jpg" alt="">
@@ -157,7 +201,7 @@
                               <ul class="quickLinks">
                                     <li><a href="#tours">Tururile noastre</a></li>
                                     <li><a href="#gallery">Galerie</a></li>
-                                    <li><a href="#about">Despre noi</a></li>
+                                    <li><a href="#services">Serviciile noastre</a></li>
                               </ul>
                         </div>
                   </div>
@@ -176,16 +220,15 @@
       </footer>
 
 
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
       </script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
       </script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" -->
+      <!-- integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"> -->
       </script>
-      <script src="scripts/script.js"></script>
 
 </body>
 

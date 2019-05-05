@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Checkout</title>
+      <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+      <!-- <link rel="stylesheet" href="styles/font-awsome.css"> -->
+      <link rel="stylesheet" href="styles/bootstrap.min.css">
+      <link rel="stylesheet" href="styles/styles.css">
+      <style>
+            .jumbotron {
+                  background-image: url('images/checkout-bg.jfif');
+                  background-size: cover;
+                  background-position: bottom;
+                  display: block;
+                  position: relative;
+                  margin: 0;
+                  height: auto;
+            }
+
+            .thanks {
+                  font-size: 12rem;
+                  text-align: center;
+                  text-shadow: black 2px 2px 6px;
+                  letter-spacing: 10px;
+            }
+
+            @media only screen and (max-width: 1200px) {
+                  .thanks {
+                        font-size: 8rem;
+                  }
+            }
+
+            @media only screen and (max-width: 768px) {
+                  .thanks {
+                        font-size: 5rem;
+                  }
+            }
+
+            .help {
+                  text-shadow: black 2px 2px 6px;
+            }
+
+            .jumbotron::after {
+                  content: "";
+
+                  opacity: 0.5;
+                  top: 0;
+                  left: 0;
+                  bottom: 0;
+                  right: 0;
+                  position: absolute;
+                  z-index: -1;
+            }
+
+            button[type="submit"] {
+                  background-color: rgba(4, 155, 155, 0);
+                  border: 3px solid white;
+                  padding: 0.5em 1em;
+                  font-weight: 450;
+            }
+
+            button[type="submit"]:hover {
+                  background-color: rgba(4, 155, 155, 1);
+                  border: 3px solid rgba(4, 155, 155, 1);
+                  padding: 0.5em 1em;
+            }
+
+            .thanks-message {
+                  text-shadow: black 2px 2px 6px;
+
+            }
+      </style>
+</head>
+
+<body>
+      <nav class="navbar sticky-top">
+            <div class="container">
+                  <a class="navbar-brand" href="index.html"><b class="title">Corolo's Trips</b></a>
+                  <ul class="nav">
+                        <li class="nav-item">
+                              <a class="nav-link active" href="index.html#tours">Tururile noastrea</a>
+                        </li>
+                        <li class="nav-item">
+                              <a class="nav-link" href="index.html#gallery">Galerie</a>
+                        </li>
+                        <li class="nav-item">
+                              <a class="nav-link" href="index.html#services">Serviciile noastre</a>
+                        </li>
+                        <li class="nav-item">
+                              <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+
+
+                  </ul>
+            </div>
+      </nav>
+      <div class="jumbotron" style="">
+            <div class="container"><br><br>
+                  <h1 class="thanks">MULTUMIM</h1>
+                  <div class="row">
+                        <div class="col-md-5 help">
+                              <h3>Pentru a continua va rugam sa completati campul alaturat si un angajat va va ajuta sa
+                                    va
+                                    puneti la punct calatoria</h3>
+                        </div>
+                        <form class="col-md-4 offset-md-2 ">
+                              <div class="form-group">
+                                    <label for="inputName">Nume</label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Nume" required>
+                              </div>
+                              <div class="form-group">
+                                    <label for="inputEmail">Email address</label>
+                                    <input type="email" class="form-control" id="inputEmail"
+                                          aria-describedby="emailHelp" placeholder="Adresa de email" required>
+                                    <small id="emailHelp" class="form-text text">Nu o sa facem public nici-o adresa de
+                                          email introdusa</small>
+                              </div>
+                              <div class="form-group">
+                                    <label for="inputDestination">Destinatia aleasa</label>
+                                    <input type="text" class="form-control" id="inputDestination"
+                                          placeholder="Destinatia pe care o doriti.." required>
+                              </div>
+                              <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Vreau sa fiu contactat
+                                          in
+                                          legatura cu viitoare oferte</label>
+                              </div><br>
+                              <button type="submit" class="btn btn-primary">Trimite</button>
+                        </form>
+                        <div class="col-md-12 thanks-message" style="display: none;">
+                              <h2> GATA! Totul este pe cale sa se intample. Un repezentant al agentiei noastre te va
+                                    contacta
+                                    in cel mai scurt timp posibil
+                              </h2>
+                        </div>
+                  </div>
+            </div>
+
+      </div>
+      <footer>
+            <div class="container">
+                  <div class="row "><br><br>
+                        <div class="col-md-4"><br><br>
+                              <h1 id="contact">Contact</h1><br>
+                              <ul class="contacte">
+                                    <li> <a href="tel:021-210-1010" alt="Call"><i class="fas fa-phone"></i>
+                                                021 210 1010</li></a>
+                                    <li><a href="mailto:contact@corolotrips.com"><i class="far fa-envelope"></i>
+                                                contact@corolotrips.com</li>
+                                    <li><a href="https://goo.gl/maps/sK8fCGoYhzL2" target="_blank"><i
+                                                      class="fas fa-map-marked-alt"></i>
+                                                Strada Bisericii, Bobolia</a></li>
+                              </ul>
+                        </div>
+                        <div class="col-md-4"><br><br>
+                              <h1>Ultimele stiri</h1><br>
+                              <a href="https://www.stiriturism.com/grad-de-ocupare-de-90-pentru-vacante-all-inclusive-de-paste-si-1-mai-in-delta-dunarii/"
+                                    class="newsTitle">Grad de ocupare de 90% pentru vacante All Inclusive de Paste si 1
+                                    Mai in Delta Dunarii</a>
+                              <p class="newsDate">Aprilie 25, 2019
+                              </p>
+                              <a href="https://www.stiriturism.com/unde-te-vei-caza-din-2018-vama-veche/"
+                                    class="newsTitle">Unde te vei caza din 2018 in Vama Veche?
+                              </a>
+                              <p class="newsDate">Mai 01, 2019
+                              </p>
+                        </div>
+                        <div class="col-md-4"><br><br>
+                              <h1>Directii rapide</h1><br>
+                              <ul class="quickLinks">
+                                    <li><a href="index.html#tours">Tururile noastre</a></li>
+                                    <li><a href="index.html#gallery">Galerie</a></li>
+                                    <li><a href="index.html#services">Serviciile noastre</a></li>
+                              </ul>
+                        </div>
+                  </div>
+                  <br>
+            </div>
+            <div class="container-fluid sub-footer">
+                  <br>
+                  <div class="container">
+                        <p>&copy; Horjea Cosmin-Marian | CNNG </p>
+                        <div><a href=" https://facebook.com" class="fab fa-facebook-square"></a>
+                              <a href="https://twitter.com/elonmusk" class="fab fa-twitter"></a>
+                              <a href="https://instagram.com/world_record_egg" class="fab fa-instagram"></a></div>
+                        <a href="https://automattic.com/cookies/">Politica cookies</a>
+                  </div>
+            </div>
+      </footer>
+      <script src="scripts/script.js"></script>
+
+
+</body>
+
+</html>
